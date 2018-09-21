@@ -10,7 +10,10 @@ class CarService {
         this.cars.push(car);
     }
 
-    displayService() { console.log(this.cars);}
+    displayService() { 
+        console.log(this.name ); 
+        this.cars.forEach((function(x){console.log(x.model)}))
+    };
 }
 
 module.exports = CarService;

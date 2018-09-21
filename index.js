@@ -9,7 +9,7 @@ const car3 = new Car();
 car1.DisplayCarInfo();
 car3.DisplayCarInfo();
 
-const service = new CarService("xyz", "US");
+const service = new CarService("Freds Auto Repair", "US");
 service.addCar(car1);
-service.addCar(car3);
+service.addCar(car3); 
 service.displayService();
