@@ -11,5 +11,5 @@ car3.DisplayCarInfo();
 
 const service = new CarService("Freds Auto Repair", "US");
 service.addCar(car1);
-service.addCar(car3); 
+service.addCar(car2); 
 service.displayService();
