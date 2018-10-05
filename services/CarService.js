@@ -28,6 +28,10 @@ class CarService {
             console.log(car);
         })
     }
+
+    returnAllCars() {
+        return this.cars;
+    }
 }
 
 module.exports = CarService;
