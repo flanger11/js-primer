@@ -13,3 +13,12 @@ const service = new CarService("Freds Auto Repair", "US");
 service.addCar(car1);
 service.addCar(car2); 
 service.displayService();
+
+function getName(name){
+    return name;
+}
+
+const getName2 = name =>  name
+
+console.log(getName("Fred"));
+console.log(getName2("Fred2"));
