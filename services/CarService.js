@@ -1,3 +1,5 @@
+const Observable = require('../Observable');
+
 function forEach(array, callbackFunction) {
     for (let i = 0; i < array.length; i++) {
         const arrayElement = array[i]
@@ -27,6 +29,14 @@ class CarService {
             this.displayCustomName("FredCustom");
             console.log(car);
         })
+    }
+
+    getSecretDocuments() {
+
+        return new Observable( () => function(){
+            
+        })
+
     }
 }
 
