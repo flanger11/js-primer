@@ -33,8 +33,16 @@ class CarService {
 
     getSecretDocuments() {
 
-        return new Observable( () => function(){
-            
+        return new Observable( (observer) => {
+            setTimeout(() => {
+                let secretDocs = "SUPER SECRET DOCUMENT, DO NOT SHARE";
+                observer.next(secretDocs);
+                observer.next(secretDocs);
+                observer.next(secretDocs);
+            }, 4000);
+            setTimeout(() => {
+                observer.error("This is an error")
+            }, 8000)
         })
 
     }
