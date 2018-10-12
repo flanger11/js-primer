@@ -31,12 +31,17 @@ class CarService {
         })
     }
 
+<<<<<<< HEAD
     getSecretDocuments() {
 
         return new Observable( () => function(){
             
         })
 
+=======
+    returnAllCars() {
+        return this.cars;
+>>>>>>> bcd9ddb72b13067d9be53c51d1a4a75885bf8a3e
     }
 }
 
